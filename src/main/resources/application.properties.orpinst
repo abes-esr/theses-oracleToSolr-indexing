@@ -1,0 +1,43 @@
+#cheminXsl.sujets = file:///C:/Users/charalambou/IdeaProjects/indexationsolr/src/main/resources/sujets2solr.xsl
+cheminXsl.sujets =file:///applis/theses/SUJETSINTERNE/XSLs/SOLR/sujets2solr.xsl
+#cheminXsl.star = file:///C:/Users/charalambou/IdeaProjects/indexationsolr/src/main/resources/tef2solr.xsl
+cheminXsl.star =file:///applis/theses/STARINTERNE/XSLs/SOLR/tef2solr.xsl
+#cheminXsl.portail = file:///C:/Users/charalambou/IdeaProjects/indexationsolr/src/main/resources/tef2solrPortail.xsl
+cheminXsl.portail =file:///applis/theses/PORTAILINTERNE/XSLs/SOLR/tef2solrPortail.xsl
+urlSolrSujets = http://denim-test.v102.abes.fr:8080/solrSujets/update
+urlSolrStar = http://denim-test.v102.abes.fr:8080/solr1/update
+urlSolrPortail = http://denim-test.v102.abes.fr:8080/solr2/update
+urlSolrHighlight = http://denim-test.v102.abes.fr:8080/solrHighlight/update
+urlSolrPersonne = http://denim-test.v102.abes.fr:8080/solrPersonne/update
+
+sujets.datasource.url= jdbc:oracle:thin:@//auster.v3.abes.fr:1521/THESES
+sujets.datasource.username = SUJETS
+sujets.datasource.password = SUJETS
+sujets.datasource.driver-class-name=oracle.jdbc.OracleDriver
+sujets.datasource.initialize=true
+sujets.jpa.properties.hibernate.dialect = fr.abes.indexationsolr.config.CustomOracle12cDialect
+
+star.datasource.url= jdbc:oracle:thin:@//orpins-t-scan.v110.abes.fr:1521/THESES
+star.datasource.username = STAR
+star.datasource.password = STAR
+star.datasource.driver-class-name=oracle.jdbc.OracleDriver
+star.datasource.initialize=true
+star.jpa.properties.hibernate.dialect = fr.abes.indexationsolr.config.CustomOracle12cDialect
+
+portail.datasource.url= jdbc:oracle:thin:@//orpins-t-scan.v110.abes.fr:1521/THESES
+portail.datasource.username = PORTAIL
+portail.datasource.password = PORTAIL
+portail.datasource.driver-class-name=oracle.jdbc.OracleDriver
+portail.datasource.initialize=true
+portail.jpa.properties.hibernate.dialect = fr.abes.indexationsolr.config.CustomOracle12cDialect
+
+debug=true
+spring.jpa.show-sql=true
+#spring.main.allow-bean-definition-overriding=true
+
+
+
+
+
+
+
